@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/css/bootstrap.min.css" integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <title>Document</title>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            createTodoApp(document.getElementById('list-2'), 'List 2', key = 'list-2')
+        })
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav">
+            <a class="nav-link" href="./index.html">List-1</a>
+            <a class="nav-link" href="#">List-2</a>
+            <a class="nav-link" href="./list-3.html">List-3</a>
+        </nav>
+    </div>
+    <div id="list-2" class="container"></div>
+    <script src="./index.js"></script>
+</body>
+</html>

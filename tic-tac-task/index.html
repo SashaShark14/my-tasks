@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.ico" type="image/x-icon">
+    <title>Tic-tac-toe</title>
+</head>
+<body>
+    <header class="header">
+      
+        <div class="logo">
+            <img src="./assets/img/logo.png" alt="" class="logo-pic">
+        </div>
+    
+ <h1 class="title-text">Tic-tac-toe game</h1>
+ 
+ <!-- <div></div> -->
+    </header>
+
+    <main class="main">
+        
+        <div class="message-container">
+            <div class="message-img">
+                <img class="mes-img" src="./assets/img/win.png" alt="Winner">
+            </div>
+            <div class="message">
+                <p class="message-text">123</p>
+            </div>
+            <div class="count">
+                <p class="count-text"></p>
+            </div>
+            <button class="game">New game</button>
+        </div>
+
+        <div class="result-container">
+            <div class="result-text">In the last 10 games:</div>
+            <div class="result-won">
+                <p class="rez-X">'X' won .. times</p>
+                <p class="rez-O">'O' won .. times</p>
+                <p class="rez-D">Draw was .. times</p>
+            </div>
+            <div class="result-moves">You made .. moves</div>
+            <button class="close-result">Close</button>
+        </div>
+
+
+        <div class="content">
+           
+            <div class="statistics">
+                <div class="currentPlayer">
+                    <span class="curPlayer"> Turn: X </span>
+                           
+                </div>          
+
+            <div class="stat">
+                <table>
+                    <th colspan="2" class="table-title">Statistics </th>
+                    <tr>
+                        <td class="table-row">X</td>
+                        <td> <span class="sX">0</span></td>
+                    </tr>
+                    <tr>
+                        <td class="table-row">O</td>
+                        <td> <span class="sO">0</span></td>
+                    </tr>
+                    <tr class="bold">
+                        <td class="table-row">Draw</td>
+                        <td> <span class="sD">0</span></td>
+                    </tr>
+                    <tr>
+                        <td class="table-row sum">Sum</td>
+                        <td> <span class="sS">0</span></td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+    <div class="area">
+        <div class="cell" pos="1"></div>
+        <div class="cell" pos="2"></div>
+        <div class="cell" pos="3"></div>
+        <div class="cell" pos="4"></div>
+        <div class="cell" pos="5"></div>
+        <div class="cell" pos="6"></div>
+        <div class="cell" pos="7"></div>
+        <div class="cell" pos="8"></div>
+        <div class="cell" pos="9"></div>    
+    </div>
+           
+
+    </div>
+    <div class="reset">
+        <button class="reset-btn">Reset</button>
+    </div>
+
+    
+    </main>
+
+    <footer class="footer">
+    <div class="footer-container">      
+        <div class="date">
+            <p class="copyright">©</p>            
+            <time class="year">2022</time>
+            <div class="github">
+                <a class="github-link" href="https://github.com/SashaShark14">github</a>
+            </div>
+        </div>
+               
+        <div class="rss">
+            <a class ="rss-link" href="https://rs.school/js-stage0/"><img class="rss-img" src="./assets/svg/rss.svg" alt="Rss-logo"></a> 
+        </div>    
+         
+        </div>
+    </footer>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

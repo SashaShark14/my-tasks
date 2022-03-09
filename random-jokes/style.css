@@ -1,0 +1,250 @@
+@font-face {
+    font-family: 'Caveat';
+    src: url("./assets/fonts/Caveat-VariableFont_wght.ttf");  
+ }
+
+ @font-face {
+    font-family: 'EBGaramond';
+    src: url("./assets/fonts/EBGaramond-VariableFont_wght.ttf");  
+ }
+
+ html {  
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+   margin: 0 auto;
+    font-family: 'EBGaramond', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 50px;
+    background-color: #274b18;
+    color: white;
+    max-width: 1440px;
+    max-height: 100vh; 
+    transition: background-color 1s ease-in;    
+}
+
+.header-logo-pic:hover,
+  .rss-img:hover {
+  filter: brightness(0) saturate(100%);
+  transform: scale(1.1);
+  }
+
+.github-link:hover {
+   color: black;
+   font-size: 26px;
+}
+
+
+/* header style start */
+  .header-container {
+      display: flex;
+      flex-wrap: wrap;      
+      flex-direction: row;     
+    align-items: center;
+    justify-content: flex-end;
+    height: 60px;
+  }
+
+.header-logo-pic {
+    background-color: transparent;
+    margin-top: 20px;
+    margin-left: 20px;
+    filter: brightness(0) invert(1);
+    transition: 0.5s ease-in;
+}
+
+#lang-button {   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    width: 70px;
+    height: 50px;
+    margin-right: 20px;
+    font-weight: 700;   
+  }
+
+  #en, #be {
+    display: none;   
+}
+
+
+.lang {
+  cursor: pointer;
+  padding-left: 10px;   
+  padding-right: 10px;
+  transition: background-color 0.2s ease-in;
+  animation: bn53bounce 3s infinite;
+  font-size: 22px;
+  letter-spacing: 0; 
+}
+
+.lang:hover,
+.lang:active {
+  letter-spacing: 3px;
+}
+
+.lang:after {
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;  
+transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.lang:hover:after{
+ backface-visibility: hidden;
+ border-color: #fff;
+ transition: width 350ms ease-in-out;
+ width: 100%;
+}
+
+@keyframes bn53bounce {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1) rotate(-5deg);
+  }
+  25% {
+    transform: scale(1) rotate(5deg);
+  }
+  30% {
+    transform: scale(1) rotate(-3deg);
+  }
+  35% {
+    transform: scale(1) rotate(2deg);
+  }
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* header style end */
+
+/* main style start */
+ .main {
+   min-height: calc(100vh - 120px);
+    display: flex;
+    flex-wrap: wrap;    
+    font-family: 'Caveat', sans-serif;
+    font-size: 42px;
+    justify-content: center;    
+ }
+
+ .change-img {
+   margin-top: 50px; 
+   margin-left: 200px; 
+   height: 300px;
+   border-radius: 10px;
+   transition:all 1s ease-in;
+   box-shadow: 0 0 10px rgba(0,0,0,0.6);
+   opacity: 0.8;   
+ }
+
+ .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  width: 900px;
+ }
+
+ .quote {
+   margin-left: 100px;
+   width: 850px;
+   min-height: 300px;
+ }
+
+ .author-text {
+   float: right;
+   font-size: 40px;
+   color: black;
+ }
+
+ .change-quote {
+ margin-left: auto; 
+ }
+ 
+ .share-btn, .change-quote {
+  cursor: pointer;  
+  transition: color 1s ease-in;
+  width: 200px;
+  height: 50px;
+  font-family: 'EBGaramond', sans-serif;
+  border: 2px solid white;
+  font-size: 22px;
+  font-weight: 600;  
+}
+
+.share-btn:hover, 
+.change-quote:hover { 
+ opacity: 0.8;
+  box-shadow: 0 0.5em 0.5em -0.4em #fff;
+  transform: translateY(-0.25em);
+}
+
+
+/* main style end */
+
+
+/* footer style start */
+.footer-container {    
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 24px;
+    height: 60px;
+  }
+  
+  .rss-img {
+    width: 135px;
+    height: 50px;
+    transition: 0.5s ease-in;  
+  } 
+  
+  .date {
+    width: 182px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;  
+  }
+  
+  .github-link {  
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.5s ease-in;  
+  }
+  
+  .rss {
+    margin-right: 20px;
+  }
+
+  .active-lang {
+    color: black;
+    font-size: 24px; 
+  }
+  
+/* footer style end */

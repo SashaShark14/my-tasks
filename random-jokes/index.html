@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/svg/favicon.ico" type="image/x-icon">
+    <title>Random jokes</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header-container">
+        <div class="header-logo">
+            <a href="javascript:void(0)" class="header-logo-link">
+                <img src="./assets/svg/logo.png" alt="logotype" class="header-logo-pic">
+            </a>
+       </div>
+
+       <div id="lang-button">
+        <label class="lang lang-en"><input type="radio" id="en" name="lang" value="en"> EN  </label>  
+              <p> / </p>
+        <label  class="lang lang-be" ><input type="radio" id="be" name="lang" value="ru"> BE </label> 
+    </div>
+
+    </div>
+    </header>
+
+    <main class="main">
+    <div class="main-container">
+
+     <div class="main-photo">
+         <img class="change-img" src="./assets/img/1.jpg" alt="Picture">
+     </div>
+
+     <div class="quote">
+         <p class="quote-text"></p>
+         <p class="author-text"></p>
+     </div>
+  
+
+     <div class="buttons">
+        <a href="https://vk.com/share.php?"> <button class="share-btn" data-lang="share">Share VK</button></a>            
+           <button class="change-quote" data-lang="quote">New quote</button>
+     </div>
+  
+
+    </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">      
+            <div class="date">
+                <p class="copyright">©</p>            
+                <time class="year">2022</time>
+                <div class="github">
+                    <a class="github-link" href="https://github.com/SashaShark14">github</a>
+                </div>
+            </div>
+               
+            <div class="rss">
+               <a class ="rss-link" href="https://rs.school/js-stage0/"><img class="rss-img" src="./assets/svg/rss.svg" alt="Rss-logo"></a> 
+            </div>    
+         
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

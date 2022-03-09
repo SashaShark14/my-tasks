@@ -1,0 +1,598 @@
+@media (max-width: 768px) {
+
+    body {
+        margin: 0;
+        max-width:100%;
+        height:100%; 
+        overflow-x: hidden;
+    }
+
+    .section-title {               
+        font-size: 32px;
+        line-height: 40.22px;        
+     }
+
+    /* header styles start */
+    .header-container {   
+        background: url(../assets/img/bg-adaptive.jpg) no-repeat center 0;
+        background-size: auto;
+        width: 100%;
+        overflow: hidden; 
+    }
+
+    #lang-button {
+        width: 85px;
+        display: flex;
+        justify-content: space-between;
+        margin-left: auto;
+    }
+
+    .header-logo-pic {        
+        padding-left: 60px;           
+    }
+
+    .header-burger {
+    display: block;
+    margin-right: 64px;
+    flex-grow: 0;
+    }
+
+
+
+    .nav {        
+        position: fixed;
+        width: 620px;
+        height: 1024px;
+        top: 0;
+       left: calc(100-19.28%);           
+        background-color: black;       
+        z-index: 10;
+        transform: translateX(100%);
+        transition: .2s all linear;
+        overflow: hidden;        
+    }
+
+    .nav-active {
+        transform: translateX(0);      
+    }
+        
+
+    .nav-list {  
+        padding-top: 114px;
+        padding-left: 127px;      
+        flex-direction: column;       
+        align-items: flex-start;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        font-size: 35px;
+        line-height: 73px;  
+    }
+
+    .nav-item {
+        margin-bottom: 16px;
+    }
+
+    .nav-close {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 15px;
+        right: 60px;
+        z-index: 11;
+    }
+    .nav-close:hover,
+    .header-burger:hover, 
+    .nav-close:active,
+    .header-burger:active {
+        filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    }
+
+    .nav-close-line {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        position: absolute;
+        top: 50%;
+    }
+    .nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+    .change-theme-button {
+       margin-right: 25px;
+      }
+
+    /* header styles end */
+
+
+
+    /* main styles start */
+
+     /* hero styles start */
+    .hero-section { 
+    overflow-x: hidden;
+    background-image: url(../assets/img/bg-adaptive.jpg);
+    background-size: auto;
+    height: 500px; 
+    }
+
+    .hero-title {
+     margin-top: 0px;
+    padding-top: 77px;
+    margin-left: 60px;
+    min-width: 165px;
+    height: 64px;       
+    font-size: 32px;
+    line-height: 64px;
+    font-weight: 400;
+    }
+
+    .hero-text {
+    height: 72px;
+    width: 390px; 
+    font-style: normal;    
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-top: 85px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    }
+
+    .hero-button {            
+    margin-left: 60px;
+    width: 219px;
+    height: 54px;
+    font-size: 20px;
+    line-height: 40px; 
+    }
+    
+    /* hero styles end */
+        
+    /* skills styles start */
+    .skills-section {      
+     padding-top: 95px;  
+     min-height: 729px;
+    }
+            
+    .subtitle-skills:before,
+    .subtitle-skills:after {   
+     height: 2px;    
+    width: 117px;	
+    }   
+
+    .skills-container {
+    min-height: 520px;
+    max-width: 728px;                 
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;                  
+    }
+
+    .skills-item {
+    padding-left: 10px;
+    width: 300px;
+    height: 224px;                    
+    }
+
+    .skills-text {
+    font-size: 18px;
+    line-height: 21.78px;
+    height: 44px;
+    width: 280px;
+    margin-left: 17px;
+    }
+
+    .skills-item-subtitle {
+    margin-top: 7px;
+    margin-left: 25px;               
+    padding-top: 5px;
+    padding-bottom: 2px;                
+    } 
+
+    .skills-logo {
+    margin-top: 5px;
+    margin-left: 25px;
+    }
+    /* skills styles end */
+
+
+    /* portfolio styles start */
+    .portfolio-section {
+    margin-top: 0px;
+    padding-top: 82px;
+    min-height: 3870px;
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: center;
+    }
+    .subtitle-portfolio:before,
+    .subtitle-portfolio:after {
+    width: 110px  
+    }
+            
+    .portfolio-buttons {                 
+    max-width: 445px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    margin-top: 40px;
+    }
+
+    .season-button {
+    width: 220px;
+    height: 55px;                
+    margin-top: 5px;   
+    margin-right: 0px;    
+    padding-left: 5px;
+    padding-top: 0px;                
+    }
+             
+    .portfolio-items {
+    height: 3485px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 60px;
+    }
+
+    .portfolio-img {
+    margin-left: 0px; 
+    padding-left: 0px;
+    padding-bottom: 0px;
+    max-width: 100%;
+    max-height: auto;    
+    }
+
+    /* portfolio styles end */
+
+        
+    /* video styles start */
+    .video-section {   
+    max-width: 768px;
+    max-height: 628px;
+    padding-top: 42px;
+    margin-top: 30px;
+    }
+
+    .subtitle-video:before,
+    .subtitle-video:after {   
+    width: 117px;	
+    }
+
+    .video-button {    
+    position: absolute;
+    margin-top: 28.6%;
+    margin-left: 45%;
+    background: transparent;
+    border: none;
+    }
+
+    .video-button-img {
+    width: 64.62px;
+    height: 64.69px;
+    }
+        
+    .video-img {  
+    margin-top: 70px;
+    margin-left: 0px;   
+    margin-bottom: 80px;
+    overflow: hidden;     
+    }
+
+    .video-section-picture {    
+    max-width: 810px;
+    height: 418px;    
+    }
+        
+    /* video styles end */
+
+    
+    /* price styles start */
+    .price-section {
+    margin-top: 31px;
+    min-height: 1905px;
+    }
+
+    .subtitle-price:before,
+    .subtitle-price:after {   
+     width: 121px;	
+    }
+
+    .price-container {
+    margin-top: 72px;        
+    justify-content: space-evenly;
+    align-content: space-between;
+    }
+
+    .price-items {
+    height: 505px;
+    width: 420px;    
+    margin-left: 0;
+    margin-bottom: 50px;
+    }    
+    /* price styles end */
+
+    /* contact styles start */
+
+    .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -98px;
+    height: 600px;
+    background: url(../assets/img/contacts-adaptive.jpg);
+    background-size: auto 600px;        
+    }
+  
+    .last-title {
+    text-align: center;      
+    font-size: 32px;
+    line-height: 64px;      
+    margin-top: 60px;
+    margin-bottom: 40px;    
+    }
+  
+    #email, #phone, #message  {
+     background: rgba(0, 0, 0, 0.5);      
+    }    
+    .contact-wrapper {  
+    max-width: 450px;
+    height: 429px;
+    position: static;
+    margin-top: 0px;
+    margin-left: 0px;
+    }
+
+    .contacts-button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;           
+    }  
+
+    /* contact styles end */
+
+     /* main styles end */
+
+
+/* footer styles start */
+.footer-container {   
+    height: 190px;
+    flex-direction: column;
+    justify-content: center;
+    align-content:center;
+    margin-top: 0px;
+
+}
+
+.date {   
+    width: 182px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 24.2px;
+    margin-top: -12px;   
+  }
+
+.rss {   
+    font-size: 20px;
+    line-height: 24.2px;
+    width: 211px;
+    height: 50px;
+    margin-left: 0;
+    margin-top: -10px;
+    
+  }
+
+.social-list {
+    margin-top: 0;
+    margin-right: 0px;
+    margin-left: 11px;
+    padding-top: 21px;    
+    display: flex;
+    flex-wrap: wrap;     
+    
+} 
+/* footer styles end */   
+}
+
+@media (max-width: 1296px) and (min-width: 769px) {
+    .skills-item {
+        margin-top: 40px;       
+    }
+}
+
+
+@media (max-width: 954px) and (min-width: 769px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .price-items {
+       margin-top: 20px;
+      }
+    
+      #email, #phone {
+        height: 50px;
+    max-width: 350px;
+    }
+  
+    #message {
+    max-width: 350px;
+      height: 100px;
+      resize: none;
+      margin-bottom: 13px;
+    }  
+}
+
+@media (max-width: 840px) and (min-width: 769px) {
+.nav {
+    flex-shrink: 3;
+}
+.lang  {
+    flex-shrink: 2;
+}
+
+.nav-item {
+    margin-right: 21px;
+}
+
+.header-logo-pic {
+    padding-left: 20px;
+    flex-shrink: 2;
+}
+
+ .nav-link {
+    font-size: 18px;
+ }
+}
+@media (max-width: 750px) {
+    .video-section-picture {    
+        max-width: 100%;
+        height: auto;    
+    }
+
+    
+
+}
+
+@media (max-width: 534px) and (min-width: 371px)  {
+    .nav-list {  
+        align-items: center;
+       
+    }
+    }
+
+@media (max-width: 500px) {
+    .hero-text {        
+        width: 350px;          
+        font-size: 18px;
+    }
+
+    .video-button-img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    .price-container {
+        margin: 10px;
+      }
+
+      .price-item-subtitle {
+        font-size: 20px;
+      }
+
+      .cost {
+        font-size: 20px;
+      }
+
+      .price-info {
+        font-size: 16px;
+      }
+
+      #email, #phone, #message {
+       max-width: 400px;       
+    }
+    .nav-link {
+        font-size: 30px;
+        line-height: 61px;  
+    }
+
+}
+
+@media (max-width: 450px) {
+    .hero-text {      
+        width: 320px; 
+        font-style: normal;    
+        font-size: 17px;
+    }
+    .skills-text {
+    font-size: 16px;
+    line-height: 18px;
+    }
+
+    .skills-item-subtitle {
+        font-size: 18px;
+    }
+
+    .video-button-img {
+        max-width: 50%;
+        height: auto;
+    }
+
+    #email, #phone, #message {
+        max-width: 350px;
+        margin-left: 10px;       
+     }
+
+.subtitle-skills:before,
+ .subtitle-skills:after,
+.subtitle-portfolio:before,
+.subtitle-portfolio:after,
+.subtitle-video:before,
+.subtitle-video:after, 
+.subtitle-price:before,
+.subtitle-price:after {   
+width: 80px;	
+    }
+
+    .portfolio-buttons {
+        margin-left: 20px;
+    }
+}
+
+
+@media (max-width: 370px) {
+    .nav-list {  
+    align-items: flex-end;       
+    }
+
+    #email, #phone, #message {
+        max-width: 300px;
+        margin-left: 10px;       
+     }
+    }
+
+@media (max-width: 360px) {
+    .hero-text {
+        height: 80px;
+        width: 290px; 
+        font-style: normal;    
+        font-size: 17px;
+        margin-left: 30px;
+    }
+
+    .header-logo-pic {
+        padding-left: 15px;
+    }
+
+    .video-button-img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .nav-link {
+        font-size: 25px;
+        line-height: 53px;  
+    }
+}
+
+
+
+
+
+    
+   
